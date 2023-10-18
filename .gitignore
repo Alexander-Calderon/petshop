@@ -1,0 +1,9 @@
+**vscode/
+**idea/
+**/obj/
+**/bin/
+**/Data/Migrations
+**/recursos
+_old.git/
+
+
