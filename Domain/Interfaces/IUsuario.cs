@@ -1,0 +1,10 @@
+
+using Domain.Entities;
+
+namespace Domain.Interfaces
+{
+    public interface IUsuario : IGenericRepository<Usuario>
+    {
+        
+    }
+}
