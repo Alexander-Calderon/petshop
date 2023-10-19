@@ -13,7 +13,7 @@ public class TratamientoMedico : BaseEntity
     public int IdMedicamentoFk { get; set; }
     
 
-    public Medicamento Medicamentos {get;set;}
-    public Cita Citas {get;set;}
+    public Medicamento Medicamento {get;set;}
+    public Cita Cita {get;set;}
 
 }

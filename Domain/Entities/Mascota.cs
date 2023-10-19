@@ -13,8 +13,8 @@ public class Mascota : BaseEntity
     public int IdPropietarioFk { get; set; }    
     public int IdRazaFk { get; set; }    
 
-    public Propietario Propietarios {get;set;}
-    public Raza Razas {get;set;}
+    public Propietario Propietario {get;set;}
+    public Raza Raza {get;set;}
 
     public ICollection<Cita> Citas {get; set;}
 

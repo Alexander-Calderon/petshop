@@ -12,7 +12,7 @@ public class Veterinario : BaseEntity
 
     public int IdEspecialidadFk { get; set; }    
 
-    public Especialidad Especialidades {get;set;}
+    public Especialidad Especialidad {get;set;}
 
     public ICollection<Cita> Citas {get; set;}
 

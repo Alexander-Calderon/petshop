@@ -13,8 +13,8 @@ public class CompraProveedor : BaseEntity
     public int IdMedicamentoFk { get; set; }
     public int IdFacturaFk { get; set; }
 
-    public Laboratorio Laboratorios {get;set;}
-    public Medicamento Medicamentos {get;set;}
-    public Factura Facturas {get;set;}
+    public Proveedor Proveedor {get;set;}
+    public Medicamento Medicamento {get;set;}
+    public Factura Factura {get;set;}
 
 }

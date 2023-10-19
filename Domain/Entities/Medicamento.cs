@@ -14,7 +14,7 @@ public class Medicamento : BaseEntity
 
     public int IdLaboratorioFk { get; set; }
 
-    public Laboratorio Laboratorios {get;set;}
+    public Laboratorio Laboratorio {get;set;}
 
 
     public ICollection<CompraProveedor> ComprasProveedores { get; set; }

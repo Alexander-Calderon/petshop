@@ -12,7 +12,7 @@ public class DetalleFactura : BaseEntity
     public int IdMedicamentoFk { get; set; }
     public int IdFacturaFk { get; set; }
 
-    public Medicamento Medicamentos {get;set;}
-    public Factura Facturas {get;set;}
+    public Medicamento Medicamento {get;set;}
+    public Factura Factura {get;set;}
 
 }

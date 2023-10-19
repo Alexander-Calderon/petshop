@@ -14,8 +14,8 @@ public class Cita : BaseEntity
     public int IdVeterinarioFk { get; set; }
     
 
-    public Mascota Mascotas {get;set;}
-    public Veterinario Veterinarios {get;set;}
+    public Mascota Mascota {get;set;}
+    public Veterinario Veterinario {get;set;}
 
     public ICollection<TratamientoMedico> TratamientosMedicos { get; set; }
 
