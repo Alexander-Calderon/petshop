@@ -19,5 +19,36 @@ public class UsuarioConfiguration : IEntityTypeConfiguration<Usuario> {
     builder.Property(u => u.Password)
       .HasColumnName("password")
       .HasColumnType("varchar(255)");
+
+    builder.HasMany(usu => usu.Roles)
+    .WithMany(rl => rl.Usuarios)
+    .UsingEntity<RolUsuario>(
+
+      j => j
+          .HasOne(ru => ru.Rol)
+          .WithMany(u => u.RolesUsuarios)
+          .HasForeignKey(ru => ru.IdUsuarioFk),
+
+      j => j
+          .HasOne(ru => ru.Usuario)
+          .WithMany(u => u.RolesUsuarios)
+          .HasForeignKey(ru => ru.IdUsuarioFk),
+
+      j =>
+      {
+          j.ToTable("ROL_USUARIO");
+          j.HasKey(ru => new { ru.IdRolFk, ru.IdUsuarioFk });
+
+      }
+
+
+
+
+    );
+
+
   }
+
+
+
 }

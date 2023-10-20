@@ -15,4 +15,6 @@ public class Usuario : BaseEntity
 
     public ICollection<RolUsuario> RolesUsuarios { get; set; }
 
+    public ICollection<Rol> Roles { get; set; } = new HashSet<Rol>();
+
 }
