@@ -7,7 +7,7 @@ public class EspecialidadConfiguration : IEntityTypeConfiguration<Especialidad>
 {
     public void Configure(EntityTypeBuilder<Especialidad> builder)
     {
-        builder.ToTable("ESPECIALIDAD");
+        builder.ToTable("ESPECIALIDADES");
 
         builder.Property(esp => esp.Nombre)
         .HasColumnName("nombre")

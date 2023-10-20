@@ -25,6 +25,12 @@ public class DetalleFacturaConfiguration : IEntityTypeConfiguration<DetalleFactu
         .HasColumnType("datetime")
         .IsRequired();
 
+
+        // builder.Property(dfac => dfac.IdMedicamentoFk)
+        // .HasColumnName("id_medicamento_fk");
+
+        // builder.Property(dfac => dfac.IdFacturaFk)
+        // .HasColumnName("id_factura_fk");
         
 
         builder.HasOne(dfac => dfac.Factura)
@@ -34,6 +40,7 @@ public class DetalleFacturaConfiguration : IEntityTypeConfiguration<DetalleFactu
         builder.HasOne(dfac => dfac.Medicamento)
         .WithMany(fac => fac.DetallesFacturas)
         .HasForeignKey(dfac => dfac.IdFacturaFk);
+
 
 
     }
